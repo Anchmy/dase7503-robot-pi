@@ -1,0 +1,54 @@
+[INFO] [launch]: All log files can be found below /home/rsi-bd-11/.ros/log/2026-10-18-23-39-07-592560-rsi-bd-11-33382
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [game_manager-1]: process started with pid [33402]
+[game_manager-1] [INFO] [1792337949.321088085] [game_manager]: state -> WAIT_START
+[game_manager-1] [INFO] [1792337949.324015619] [game_manager]: game_manager ready in Nav2 mode; waiting for START QR
+[game_manager-1] [INFO] [1792337967.023159479] [game_manager]: START scanned; 4 racks queued: A, B, C, D
+[game_manager-1] [INFO] [1792337967.025866274] [game_manager]: state -> DRIVE_TO_RACK
+[game_manager-1] [INFO] [1792337967.026636342] [game_manager]: driving to (1.27, 1.23, 1.57)
+[game_manager-1] [INFO] [1792337976.585488633] [game_manager]: state -> WAIT_RACK_QR
+[game_manager-1] [INFO] [1792337976.586415738] [game_manager]: at rack A; waiting for its QR
+[game_manager-1] [INFO] [1792337976.623096804] [game_manager]: rack QR confirmed: RACKA_4X6M
+[game_manager-1] [INFO] [1792337976.624347350] [game_manager]: state -> LIFT_UP
+[game_manager-1] [INFO] [1792337976.625322769] [game_manager]: lift up for rack A
+[game_manager-1] [INFO] [1792337978.224055019] [game_manager]: state -> DRIVE_TO_DEST
+[game_manager-1] [INFO] [1792337978.225670748] [game_manager]: driving to (0.40, 0.45, 3.14)
+[game_manager-1] [INFO] [1792337987.284546589] [game_manager]: state -> LIFT_DOWN
+[game_manager-1] [INFO] [1792337988.825617197] [game_manager]: shipment delivered (1 total, score 5)
+[game_manager-1] [INFO] [1792337988.826833391] [game_manager]: state -> DRIVE_TO_RACK
+[game_manager-1] [INFO] [1792337988.827552738] [game_manager]: driving to (1.82, 0.86, -1.57)
+[game_manager-1] [INFO] [1792338001.182321591] [game_manager]: state -> WAIT_RACK_QR
+[game_manager-1] [INFO] [1792338001.183106289] [game_manager]: at rack B; waiting for its QR
+[game_manager-1] [INFO] [1792338001.223609907] [game_manager]: rack QR confirmed: RACKB_7K2P
+[game_manager-1] [INFO] [1792338001.224490956] [game_manager]: state -> LIFT_UP
+[game_manager-1] [INFO] [1792338001.225250340] [game_manager]: lift up for rack B
+[game_manager-1] [INFO] [1792338002.824136977] [game_manager]: state -> DRIVE_TO_DEST
+[game_manager-1] [INFO] [1792338002.826989586] [game_manager]: driving to (0.40, 0.85, 3.14)
+[game_manager-1] [INFO] [1792338011.863540283] [game_manager]: state -> LIFT_DOWN
+[game_manager-1] [INFO] [1792338013.426410632] [game_manager]: shipment delivered (2 total, score 10)
+[game_manager-1] [INFO] [1792338013.428688746] [game_manager]: state -> DRIVE_TO_RACK
+[game_manager-1] [INFO] [1792338013.429444555] [game_manager]: driving to (1.93, 1.37, 1.57)
+[game_manager-1] [INFO] [1792338024.973508892] [game_manager]: state -> WAIT_RACK_QR
+[game_manager-1] [INFO] [1792338024.974267590] [game_manager]: at rack C; waiting for its QR
+[game_manager-1] [INFO] [1792338025.024352886] [game_manager]: rack QR confirmed: RACKC_9Q1L
+[game_manager-1] [INFO] [1792338025.026897405] [game_manager]: state -> LIFT_UP
+[game_manager-1] [INFO] [1792338025.027709770] [game_manager]: lift up for rack C
+[game_manager-1] [INFO] [1792338026.625225624] [game_manager]: state -> DRIVE_TO_DEST
+[game_manager-1] [INFO] [1792338026.626034303] [game_manager]: driving to (0.40, 1.25, 3.14)
+[game_manager-1] [INFO] [1792338035.881514946] [game_manager]: state -> LIFT_DOWN
+[game_manager-1] [INFO] [1792338037.424654318] [game_manager]: shipment delivered (3 total, score 15)
+[game_manager-1] [INFO] [1792338037.425699385] [game_manager]: state -> DRIVE_TO_RACK
+[game_manager-1] [INFO] [1792338037.426526916] [game_manager]: driving to (1.32, 0.55, -1.57)
+[game_manager-1] [INFO] [1792338047.173184014] [game_manager]: state -> WAIT_RACK_QR
+[game_manager-1] [INFO] [1792338047.173965323] [game_manager]: at rack D; waiting for its QR
+[game_manager-1] [INFO] [1792338047.224208364] [game_manager]: rack QR confirmed: RACKD_3W8N
+[game_manager-1] [INFO] [1792338047.226153572] [game_manager]: state -> LIFT_UP
+[game_manager-1] [INFO] [1792338047.227041900] [game_manager]: lift up for rack D
+[game_manager-1] [INFO] [1792338048.825309656] [game_manager]: state -> DRIVE_TO_DEST
+[game_manager-1] [INFO] [1792338048.825969225] [game_manager]: driving to (0.40, 1.62, 3.14)
+[game_manager-1] [INFO] [1792338059.185182028] [game_manager]: state -> LIFT_DOWN
+[game_manager-1] [INFO] [1792338060.723760875] [game_manager]: shipment delivered (4 total, score 20)
+[game_manager-1] [INFO] [1792338060.726340228] [game_manager]: state -> WAIT_END_QR
+[game_manager-1] [INFO] [1792338060.727329128] [game_manager]: all racks delivered; waiting for END QR
+[game_manager-1] [INFO] [1792338060.823376542] [game_manager]: state -> DONE
+[game_manager-1] [INFO] [1792338060.823988427] [game_manager]: mission finished: END QR scanned; 4 shipments, score 20

@@ -1,0 +1,11 @@
+# Local scratch: installers, PDFs, screenshots, one-off scripts
+.scratch/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# colcon build products (in case a workspace is built in place)
+build/
+install/
+log/

@@ -1,0 +1,34 @@
+[INFO] [1792337963.837552524] [mission_supervisor]: supervisor up, rack order ['A', 'B', 'C', 'D'], timeout 170.0s
+[INFO] [1792337967.019329859] [mission_supervisor]: [   3.2s] sent START
+[INFO] [1792337967.025470055] [mission_supervisor]: [   3.2s] score 0
+[INFO] [1792337967.028560847] [mission_supervisor]: [   3.2s] None -> DRIVE_TO_RACK (previous state held 0.0s)
+[INFO] [1792337976.588266391] [mission_supervisor]: [  12.8s] DRIVE_TO_RACK -> WAIT_RACK_QR (previous state held 9.6s)
+[INFO] [1792337976.590313080] [mission_supervisor]: [  12.8s] sent RACKA_4X6M
+[INFO] [1792337976.625446824] [mission_supervisor]: [  12.8s] WAIT_RACK_QR -> LIFT_UP (previous state held 0.0s)
+[INFO] [1792337978.224133574] [mission_supervisor]: [  14.4s] LIFT_UP -> DRIVE_TO_DEST (previous state held 1.6s)
+[INFO] [1792337987.284867402] [mission_supervisor]: [  23.5s] DRIVE_TO_DEST -> LIFT_DOWN (previous state held 9.1s)
+[INFO] [1792337988.824903813] [mission_supervisor]: [  25.0s] score 5
+[INFO] [1792337988.827388758] [mission_supervisor]: [  25.0s] LIFT_DOWN -> DRIVE_TO_RACK (previous state held 1.5s)
+[INFO] [1792338001.183362547] [mission_supervisor]: [  37.4s] DRIVE_TO_RACK -> WAIT_RACK_QR (previous state held 12.4s)
+[INFO] [1792338001.184203170] [mission_supervisor]: [  37.4s] sent RACKB_7K2P
+[INFO] [1792338001.224979045] [mission_supervisor]: [  37.4s] WAIT_RACK_QR -> LIFT_UP (previous state held 0.0s)
+[INFO] [1792338002.824843398] [mission_supervisor]: [  39.0s] LIFT_UP -> DRIVE_TO_DEST (previous state held 1.6s)
+[INFO] [1792338011.863825707] [mission_supervisor]: [  48.1s] DRIVE_TO_DEST -> LIFT_DOWN (previous state held 9.0s)
+[INFO] [1792338013.424967865] [mission_supervisor]: [  49.6s] score 10
+[INFO] [1792338013.429742108] [mission_supervisor]: [  49.6s] LIFT_DOWN -> DRIVE_TO_RACK (previous state held 1.6s)
+[INFO] [1792338024.973827279] [mission_supervisor]: [  61.2s] DRIVE_TO_RACK -> WAIT_RACK_QR (previous state held 11.5s)
+[INFO] [1792338024.974597958] [mission_supervisor]: [  61.2s] sent RACKC_9Q1L
+[INFO] [1792338025.026616722] [mission_supervisor]: [  61.2s] WAIT_RACK_QR -> LIFT_UP (previous state held 0.1s)
+[INFO] [1792338026.624102798] [mission_supervisor]: [  62.8s] LIFT_UP -> DRIVE_TO_DEST (previous state held 1.6s)
+[INFO] [1792338035.883058454] [mission_supervisor]: [  72.1s] DRIVE_TO_DEST -> LIFT_DOWN (previous state held 9.3s)
+[INFO] [1792338037.426070049] [mission_supervisor]: [  73.6s] LIFT_DOWN -> DRIVE_TO_RACK (previous state held 1.5s)
+[INFO] [1792338037.427185467] [mission_supervisor]: [  73.6s] score 15
+[INFO] [1792338047.173436142] [mission_supervisor]: [  83.4s] DRIVE_TO_RACK -> WAIT_RACK_QR (previous state held 9.7s)
+[INFO] [1792338047.174240321] [mission_supervisor]: [  83.4s] sent RACKD_3W8N
+[INFO] [1792338047.226510681] [mission_supervisor]: [  83.4s] WAIT_RACK_QR -> LIFT_UP (previous state held 0.1s)
+[INFO] [1792338048.826166131] [mission_supervisor]: [  85.0s] LIFT_UP -> DRIVE_TO_DEST (previous state held 1.6s)
+[INFO] [1792338059.185258713] [mission_supervisor]: [  95.4s] DRIVE_TO_DEST -> LIFT_DOWN (previous state held 10.4s)
+[INFO] [1792338060.723943411] [mission_supervisor]: [  96.9s] score 20
+[INFO] [1792338060.727263203] [mission_supervisor]: [  96.9s] LIFT_DOWN -> WAIT_END_QR (previous state held 1.5s)
+[INFO] [1792338060.728194585] [mission_supervisor]: [  96.9s] sent END
+[INFO] [1792338060.824099445] [mission_supervisor]: [  97.0s] WAIT_END_QR -> DONE (previous state held 0.1s)

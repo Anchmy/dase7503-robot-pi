@@ -1,0 +1,73 @@
+# Game parameters.
+#
+# Poses are in the map frame, metres and radians.  The map is generated from
+# the course drawing (tools/make_field_map.py), so the field origin is the
+# bottom-left corner of the 3020 x 2000 mm field, x right, y up.
+#
+# The rack_* poses are APPROACH poses, not rack centres: the robot stops
+# 0.35 m in front of the rack's QR face so the camera can read it.  If the
+# lift needs the robot closer, move the pose towards the rack: the QR is
+# cached for 30 s from the approach (rack_qr_cache_time), so it does not
+# have to stay in view at the final pose.  Rack centres from the drawing:
+#   A (1.275, 1.580)  B (1.825, 0.510)
+#   C (1.925, 1.720)  D (1.325, 0.200)
+game_manager:
+  ros__parameters:
+    use_nav2: true
+    # set_initial_pose: publish /initialpose when START is scanned.
+    # Only needed with AMCL; leave false for slam_toolbox-based localisation.
+    set_initial_pose: false
+    # Only used when use_nav2 is false (desk testing).
+    dry_run_travel_time: 3.0
+
+    # Whole match is 3 minutes; leave a small margin so the robot stops
+    # before the judges' timer, not after.
+    mission_timeout: 180.0
+    rack_scan_timeout: 15.0
+    end_scan_timeout: 20.0
+    lift_time: 1.5
+    rack_order: "A,B,C,D"
+    require_end_qr: true
+
+    # The END plate sits at the destination, so it is in view on every
+    # delivery.  Keep this false: an END seen mid-mission must not end the
+    # match after the first rack.
+    end_qr_stops_mission: false
+    # Accept only the QR of the rack we actually drove to; a neighbouring
+    # rack's plate can enter the frame at the approach pose.
+    strict_rack_match: true
+    # A rack QR first seen while driving in stays valid this long.
+    rack_qr_cache_time: 30.0
+
+    # Start zone centre (x 2.42..3.02, y 0.60..1.40), facing the field.
+    start_x: 2.72
+    start_y: 1.00
+    start_yaw: 3.1416
+
+    # Destination zone centre (x 0.00..0.80, y 0.30..1.70), facing the wall.
+    # Used only when destination_points is empty.
+    destination_x: 0.40
+    destination_y: 1.00
+    destination_yaw: 3.1416
+
+    # One drop point per delivery, all inside the destination zone and
+    # 0.35-0.40 m apart so the robot never drives into the rack it dropped
+    # last time.  Rack footprint 150 x 140 mm, so the edges stay inside
+    # y 0.30..1.70.
+    destination_points: "0.40,0.45,3.1416; 0.40,0.85,3.1416; 0.40,1.25,3.1416; 0.40,1.62,3.1416"
+
+    # Top-row racks face south (QR face toward the field centre).
+    rack_a_x: 1.275
+    rack_a_y: 1.230
+    rack_a_yaw: 1.5708
+    rack_c_x: 1.925
+    rack_c_y: 1.370
+    rack_c_yaw: 1.5708
+
+    # Bottom-row racks face north.
+    rack_b_x: 1.825
+    rack_b_y: 0.860
+    rack_b_yaw: -1.5708
+    rack_d_x: 1.325
+    rack_d_y: 0.550
+    rack_d_yaw: -1.5708

@@ -1,0 +1,14 @@
+* text=auto
+
+# Scripts and configs must stay LF so they run unchanged on the Pi.
+*.sh    text eol=lf
+*.py    text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.md    text eol=lf
+*.rviz  text eol=lf
+*.launch text eol=lf
+
+*.png binary
+*.pgm binary
+*.pdf binary
